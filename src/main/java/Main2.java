@@ -25,7 +25,7 @@ public class Main2 {
     static int[] getNPairs(int n) {
         int[] res = new int[n];
         for (int i = 1; i <= n; i++) {
-            res[i]=i*2;
+            res[i-1]=i*2;
         }
         return res;
     }
