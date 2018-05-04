@@ -38,7 +38,7 @@ public class Main2 {
      */
     static int[] getNFibonacci(int n) {
         int[] memo = new int[n];
-        memo[0] = 1;
+        memo[0] = 0;
         memo[1] = 1;
         for (int i = 2; i < n; i++) {
             memo[i] = memo[i - 2] + memo[i - 1];
@@ -66,6 +66,18 @@ public class Main2 {
             }
         }
         return res;
+    }
+
+    public static int[] fibonacci(int n) {
+        int[] secuenciaFibo = new int[n];
+        secuenciaFibo[0] = 0;
+        if(n>1){
+            secuenciaFibo[1] = 1;
+            for (int i = 2; i < n; i++) {
+                secuenciaFibo[i] = secuenciaFibo[i - 2] + secuenciaFibo[i - 1];
+            }
+        }
+        return  secuenciaFibo;
     }
 
 }
