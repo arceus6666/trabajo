@@ -24,7 +24,7 @@ public class Main2 {
      */
     static int[] getNPairs(int n) {
         int[] res = new int[n];
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             res[i]=i*2;
         }
         return res;
@@ -64,7 +64,6 @@ public class Main2 {
                 res[count2] = j;
                 count2++;
             }
-
         }
         return res;
     }
